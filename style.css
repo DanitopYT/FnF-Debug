@@ -2,44 +2,59 @@
 
 /* --- Estilos Generales --- */
 body {
-    /* Define la fuente principal y asegura que el texto sea legible */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    /* Un color de fondo claro */
     background-color: #f0f2f5; 
-    /* Margen para que el contenido no toque los bordes de la ventana */
     padding: 20px;
+    color: #333;
 }
 
-/* --- Contenedor Principal (Simulación de una tarjeta) --- */
+/* --- Encabezado Principal con la Imagen --- */
+.main-header {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #2c3e50; /* Fondo azul oscuro */
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header-logo {
+    max-width: 150px; 
+    height: auto;
+    display: block; 
+    margin: 0 auto 10px auto; 
+}
+
+.header-title {
+    font-size: 3em; 
+    color: #ecf0f1; /* Letras blancas */
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+
+/* --- Contenedor Principal (Tarjeta de contenido) --- */
 .container {
-    /* Centra el contenido y limita su ancho para mejor lectura */
     max-width: 700px;
     margin: 40px auto;
-    /* Fondo blanco para contrastar con el fondo del body */
     background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
-    /* Sombra suave para darle un efecto de elevación */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* --- Tipografía y Títulos --- */
-h1 {
-    color: #2c3e50; /* Azul oscuro */
-    border-bottom: 3px solid #3498db; /* Línea inferior azul brillante */
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
+/* --- Títulos de Contenido --- */
 h2 {
-    color: #34495e; /* Gris/azul intermedio */
+    color: #34495e;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
     margin-top: 30px;
 }
 
-/* --- Listas (Características) --- */
+/* --- Listas --- */
 ul {
-    list-style-type: '👉 '; /* Personaliza la viñeta con un emoji */
+    list-style-type: '👉 ';
     margin-left: 0;
     padding-left: 20px;
 }
@@ -48,26 +63,19 @@ li {
     margin-bottom: 10px;
 }
 
-/* --- Enlaces (Descargas) --- */
+/* --- Enlaces --- */
 a {
-    color: #3498db; /* Azul estándar para enlaces */
-    text-decoration: none; /* Elimina el subrayado por defecto */
+    color: #3498db;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #2980b9; /* Oscurece el color al pasar el mouse */
-    text-decoration: underline; /* Muestra subrayado al interactuar */
+    color: #2980b9;
+    text-decoration: underline;
 }
 
-/* --- Texto en Negrita (Énfasis) --- */
+/* --- Énfasis (Texto en negrita) --- */
 strong {
-    color: #e74c3c; /* Resalta el texto importante, como "No JSON AT ALL!!" */
+    color: #e74c3c;
 }
-
-/* --- Mejorando el HTML para usar el CSS --- */
-
-/* Para usar este CSS, debes modificar el HTML que te di antes.
-   Añade la clase "container" a un div que envuelva el contenido y enlaza el CSS.
-   Mira el ejemplo de la estructura a continuación:
-*/

@@ -1,40 +1,39 @@
-<div class="action-buttons">
-            <a href="https://www.mediafire.com/file/cp73o31donupt8p/FNFDEBUG.apk/file" target="_blank" class="btn btn-download">
-                ⬇️ Descargar (Android)
-            </a>
-            <button class="btn btn-info" onclick="showInfo()">
-                ℹ️ Info
-            </button>
-        </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNF DEBUG - Info</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
 
-        <div id="infoModal" class="modal">
-            <div class="modal-content">
-                <span class="close-btn" onclick="closeInfo()">&times;</span>
-                <h3>Acerca de FNF DEBUG</h3>
-                <p><strong>Nombre:</strong> FNF DEBUG</p>
-                <p><strong>Versión:</strong> 1.0 (Alpha)</p>
-                <p><strong>Desarrollador:</strong> [Tu Nombre/Usuario]</p>
-                <p>FNF DEBUG es un motor alternativo diseñado para la creación de mods de FNF en dispositivos de 32 bits, optimizado para evitar problemas de compatibilidad y sin necesidad de archivos JSON.</p>
-            </div>
-        </div>
+    <header class="main-header">
+        <img src="IMG_20251128_153217.png" alt="FNF DEBUG Logo" class="header-logo">
+        <h1 class="header-title">FNF DEBUG!</h1>
+    </header>
 
-        ```
+    <div class="container">
+        
+        <p>If u want to make a fnf mod in 32bits but **pysch engine** and **Funkin-Android** doest work well use **FNF DEBUG!**</p>
 
-**Nota Importante:** He cambiado el enlace de descarga que estaba en `<h2>Downloads:</h2>` y lo he movido al botón. La sección `Downloads:` ahora se puede eliminar o dejar solo para la versión de PC.
+        <ul>
+            <li>Works like Funkin Android</li>
+            <li>Funking modded is cool</li>
+            <li>No JSON AT ALL!!</li>
+        </ul>
 
----
+        <h2>Downloads:</h2>
 
-## 🎨 2. Modificación al CSS (style.css)
+        <p><strong>Android:</strong></p>
+        <p><a href="https://www.mediafire.com/file/cp73o31donupt8p/FNFDEBUG.apk/file" target="_blank">https://www.mediafire.com/file/cp73o31donupt8p/FNFDEBUG.apk/file</a></p>
 
-Necesitamos añadir estilos para los botones (`.btn`) y para la ventana modal de información (`.modal`).
+        <p><strong>PC:</strong></p>
+        <p>Working on</p>
+    </div>
 
-Añade el siguiente código **al final** de tu archivo `style.css`:
-
-```css
-/* --- 2. Estilos para Botones de Acción --- */
-.action-buttons {
-    text-align: center;
-    margin: 30px 0;
+</body>
+</html>    margin: 30px 0;
 }
 
 .btn {

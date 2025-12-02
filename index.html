@@ -17,24 +17,57 @@
         
         <p>If u want to make a fnf mod in 32bits but **pysch engine** and **Funkin-Android** doest work well use **FNF DEBUG!**</p>
 
-        <ul>
+        <ul class="features-list">
             <li>Works like Funkin Android</li>
             <li>Funking modded is cool</li>
             <li>No JSON AT ALL!!</li>
         </ul>
 
-        <h2>Downloads:</h2>
+        <div class="action-buttons">
+            <a href="https://www.mediafire.com/file/cp73o31donupt8p/FNFDEBUG.apk/file" target="_blank" class="btn btn-download">
+                ⬇️ Descargar (Android)
+            </a>
+            <button class="btn btn-info" onclick="showInfo()">
+                ℹ️ Info
+            </button>
+        </div>
+        
+        <div class="downloads-section">
+            <h2>Otras Versiones</h2>
+            <p><strong>PC:</strong> Working on</p>
+        </div>
 
-        <p><strong>Android:</strong></p>
-        <p><a href="https://www.mediafire.com/file/cp73o31donupt8p/FNFDEBUG.apk/file" target="_blank">https://www.mediafire.com/file/cp73o31donupt8p/FNFDEBUG.apk/file</a></p>
-
-        <p><strong>PC:</strong></p>
-        <p>Working on</p>
     </div>
-
+    
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeInfo()">&times;</span>
+            <h3>Acerca de FNF DEBUG</h3>
+            <p><strong>Nombre:</strong> FNF DEBUG</p>
+            <p><strong>Versión:</strong> 1.0 (Alpha)</p>
+            <p><strong>Desarrollador:</strong> Danitopyt (TBD)</p>
+            <p>FNF DEBUG es un motor alternativo diseñado para la creación de mods de FNF en dispositivos de 32 bits, optimizado para evitar problemas de compatibilidad y sin necesidad de archivos JSON.</p>
+        </div>
+    </div>
+    
+    <script>
+        function showInfo() {
+            document.getElementById("infoModal").style.display = "block";
+        }
+        function closeInfo() {
+            document.getElementById("infoModal").style.display = "none";
+        }
+        
+        // Cierra la modal si el usuario hace clic fuera
+        window.onclick = function(event) {
+          const modal = document.getElementById("infoModal");
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script>
 </body>
-</html>    margin: 30px 0;
-}
+</html>}
 
 .btn {
     display: inline-block;
